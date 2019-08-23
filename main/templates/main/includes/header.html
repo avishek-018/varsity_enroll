@@ -1,21 +1,37 @@
 {% load static %}
 
 <head>
-	<link rel="stylesheet" href="{% static 'tinymce/css/prism.css' %}">
 
 	<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+  
+
+		  body {
+		    display: flex;
+		    min-height: 100vh;
+		    flex-direction: column;
+		  }
+
+		  main {
+		    flex: 1 0 auto;
+		  }
+		      
+
+</style>
+       
 </head>
 
 <body>
 
-	<nav>
-	    <div class="nav-wrapper indigo darken-2">
-	      <a href="/" class="brand-logo">Logo</a>
+	<nav class="indigo darken-2">
+	    <div class="nav-wrapper container" >
+	      <a href="/" class="brand-logo">BS-23</a>
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
 
 	      	{% include 'main/includes/navbaritems.html' %}
@@ -24,13 +40,17 @@
 	    </div>
   	</nav>
 
- 	
 
-  	
+
+  	<main>
+ 	
+		{% include 'main/includes/messages.html' %}
+
 		{% block content %}
 	  	
 	  	{% endblock %}
 
+	</main>
+
 	  	{% include 'main/includes/footer.html' %}
 </body>
-<script type="text/javascript" src="{% static 'tinymce/js/prism.js' %}"></script>
