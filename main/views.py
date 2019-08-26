@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login as dj_login, logout, authenticate
 from django.contrib import messages
+from .models import student
 
 
 
@@ -45,3 +46,27 @@ def cpanel(request):
 		request,
 		"main/cpanel.html"
 		)
+
+def add_student(request):
+
+    if request.method == "POST":
+        if request.POST.get('first_name') and request.POST.get('last_name') and request.POST.get('b_date') and request.POST.get('roll') and request.POST.get('dept') and request.POST.get('batch') :
+            post=student()
+            post.first_name= request.POST.get('first_name')
+            post.last_name= request.POST.get('last_name')
+            post.b_date= request.POST.get('b_date')
+            post.roll= request.POST.get('roll')
+            post.dept= request.POST.get('dept')
+            post.batch= request.POST.get('batch')
+
+            post.save()
+            messages.info(request, f"Data inserted for { request.POST.get('first_name') }")
+        else:
+            messages.error(request, "Please Fill Up all the Fields")
+
+            
+    return render(
+        request,
+        "main/add_student.html"
+        )
+    
