@@ -24,5 +24,8 @@ urlpatterns = [
     path("logout/", views.logout_request, name="logout"),
     path("cpanel/", views.cpanel, name="cpanel"),
     path("add_student/", views.add_student, name="add_student"),
+<<<<<<< HEAD
     path("view_students/", views.view_students, name="add_student"),
+=======
+>>>>>>> origin/master
  ]
