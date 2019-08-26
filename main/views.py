@@ -69,6 +69,7 @@ def add_student(request):
         request,
         "main/add_student.html"
         )
+<<<<<<< HEAD
 
 
 def view_students(request):
@@ -77,4 +78,6 @@ def view_students(request):
     request,
     "main/view_students.html"
     )
+=======
+>>>>>>> origin/master
     
