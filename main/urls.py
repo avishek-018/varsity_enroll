@@ -20,5 +20,8 @@ from . import views
 app_name = "main"
 urlpatterns = [
     path("", views.homepage, name="homepage"),
-    #path("register/", views.register, name="register"),
+    path("login/", views.login, name="login"),
+    path("logout/", views.logout_request, name="logout"),
+    path("cpanel/", views.cpanel, name="cpanel"),
+    path("add_student/", views.add_student, name="add_student"),
  ]
