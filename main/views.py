@@ -45,3 +45,10 @@ def cpanel(request):
 		request,
 		"main/cpanel.html"
 		)
+
+def view_students(request):
+
+    return render(
+        request,
+        "main/view_students.html"
+        )

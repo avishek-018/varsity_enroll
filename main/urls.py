@@ -23,5 +23,5 @@ urlpatterns = [
     path("login/", views.login, name="login"),
     path("logout/", views.logout_request, name="logout"),
     path("cpanel/", views.cpanel, name="cpanel"),
-    
+    path("view_students/", views.view_students, name="add_student"),
  ]
