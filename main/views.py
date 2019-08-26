@@ -73,7 +73,7 @@ def add_student(request):
 
 def view_students(request):
 
-return render(
+    return render(
     request,
     "main/view_students.html"
     )
