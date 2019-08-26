@@ -69,7 +69,7 @@ def add_student(request):
         request,
         "main/add_student.html"
         )
-<<<<<<< HEAD
+
 
 
 def view_students(request):
@@ -78,6 +78,17 @@ def view_students(request):
     request,
     "main/view_students.html"
     )
-=======
->>>>>>> origin/master
-    
+
+def list_students(request):
+    all_students = student.objects.all()
+    if request.method == "POST":
+        search_id = request.POST.get('search_id')
+        
+
+    filter_id = student.objects.filter(roll = search_id)
+
+    return render(
+        request,
+        "main/list_students.html",
+        {'all_students': filter_id}
+        )    
