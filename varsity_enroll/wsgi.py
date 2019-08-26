@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'versity_enroll.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'varsity_enroll.settings')
 
 application = get_wsgi_application()

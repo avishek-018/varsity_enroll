@@ -7,7 +7,7 @@ class student(models.Model):
 	b_date = models.DateTimeField('Birth Date')
 	roll = models.CharField(max_length = 20)
 	dept = models.CharField(max_length = 20)
-	session  = models.CharField(max_length = 20)
+	batch  = models.CharField(max_length = 20)
 
 
 class teacher(models.Model):
