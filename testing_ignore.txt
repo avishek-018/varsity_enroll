@@ -1,0 +1,3 @@
+testing_ignore.txt
+/main/__pycache__
+/varsity_enroll/__pycache__
