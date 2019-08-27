@@ -7,7 +7,7 @@ from django.contrib.auth.models import AbstractUser
 class student(models.Model):
 	first_name = models.CharField(max_length = 20)
 	last_name = models.CharField(max_length = 20)
-	b_date = models.DateTimeField('Birth Date')
+	b_date = models.DateField('Birth Date')
 	roll = models.CharField(max_length = 20, primary_key=True)
 	dept = models.CharField(max_length = 20)
 	batch  = models.CharField(max_length = 21)
