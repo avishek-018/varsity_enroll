@@ -1,2 +1,0 @@
-/main/__pycache__
-/varsity_enroll/__pycache__
