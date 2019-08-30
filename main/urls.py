@@ -34,6 +34,7 @@ urlpatterns = [
     path("fetch_enrolled_session/",views.fetch_enrolled_session,name="fetch_enrolled_session"),
     path("fetch_enrolled_batch/",views.fetch_enrolled_batch,name="fetch_enrolled_batch"),
     path("view_enrolled_student/",views.view_enrolled_student,name="view_enrolled_student"),
+    path("graph/",views.graph,name="graph"),
 
 
  ]

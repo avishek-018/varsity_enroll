@@ -28,10 +28,20 @@
 	         	<th>Last Name:</th>
 	        	<td>{{ st.last_name }}</td>
 	        </tr>
+
+	         {% if user.is_authenticated %}
 	         <tr>
 	         	<th>Birth Date:</th>
 	        	<td>{{ st.b_date }}</td>
 	        </tr>
+	          {% endif %}
+	       
+	         <tr>
+	         	<th>Age :</th>
+	        	<td>{{ age }}</td>
+	        </tr>
+
+	      
 	         <tr>
 	         	 <th>Roll:</th>
 	        	<td>{{ st.roll }}</td>
