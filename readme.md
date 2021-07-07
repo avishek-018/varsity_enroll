@@ -6,3 +6,6 @@ CSS and Javascript.
 implement the framework.
 - The project was given to us to get a taste of how a software firm develops a project. And
 with great team work the project was completed in due time.
+
+## Overview
+<img src="images/overview.png">
